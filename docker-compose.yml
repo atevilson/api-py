@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: api-py
+    volumes:
+      - .:/home/Documents/python/app
