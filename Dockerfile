@@ -6,4 +6,6 @@ USER  python
 
 WORKDIR /home/Documents/python/app
 
+ENV PYTHONPATH=${PYTHONPATH}/home/Documents/python/app/src
+
 CMD [ "tail", "-f", "/dev/null" ]
