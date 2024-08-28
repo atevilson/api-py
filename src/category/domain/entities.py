@@ -1,6 +1,9 @@
+from dataclasses import dataclass
 
+@dataclass()
 class Category:
-    def __init__(self, name: str, email: str, phone: str) -> None:
-        self.name = name
-        self.email = email
-        self.phone = phone
+    name: str
+    email: str
+    phone: str
+
+print(Category('Atevilson', 'freitas.atevilson@gmail.com', '44999999999'))
